@@ -2,10 +2,7 @@ import yfinance as yf
 from fastmcp import FastMCP
 
 
-mcp = FastMCP(
-    'yfinance MCP Server',
-    auth=None,
-)
+mcp = FastMCP('yfinance MCP Server')
 
 @mcp.tool
 def get_current_stock_price(ticker: str) -> float:
